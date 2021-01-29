@@ -1,12 +1,16 @@
-body{
+body {
     text-align: center;
+    background-image: url("https://i.pinimg.com/originals/bf/fc/bb/bffcbb3c0a5f66158141ae3e6c89bf11.jpg");
 }
 @font-face {
     font-family:"Virus_01";
     src: url('/assets/fonts/Virus_01.ttf');
     font-style: normal;
 }
-
+#title{
+    font-family: Arial;
+    color: white;
+}
 #bubl{
   
     font-family: 'Creepster', cursive;
@@ -56,4 +60,15 @@ body{
 #kovalchuk_dmytro{
     font-family: "Lucida Calligraphy";
     color: darkgoldenrod;
+}
+@font-face {
+    font-family: "Aero Matics";
+    src: url("/assets/fonts/Aero_Mastic_Stencil_Bold.ttf");
+}
+#Kovba{
+    color: red;
+    background-color: black;
+    font-family: "Aero Matics";
+    margin-left: 530px;
+    margin-right: 530px;
 }
