@@ -1,6 +1,7 @@
 body {
     text-align: center;
     background-image: url("https://i.pinimg.com/originals/bf/fc/bb/bffcbb3c0a5f66158141ae3e6c89bf11.jpg");
+    background-attachment: fixed;
 }
 @font-face {
     font-family:"Virus_01";
@@ -61,16 +62,12 @@ body {
     font-family: "Lucida Calligraphy";
     color: darkgoldenrod;
 }
-@font-face {
-    font-family: "Aero Matics";
-    src: url("/assets/fonts/Aero_Mastic_Stencil_Bold.ttf");
-}
 #Kovba{
     color: red;
     background-color: black;
-    font-family: "Aero Matics";
-    margin-left: 530px;
-    margin-right: 530px;
+    font-family: "Segoe Print", serif;
+    margin-left: 325px;
+    margin-right: 325px;
 }
 #kzncvaa {
   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
@@ -99,4 +96,23 @@ body {
   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
     color: #fff6a9;
   }
+}
+
+#myroslava {
+    font-family: "Segoe Script";
+    color: #00deff;
+    text-shadow: 5px 5px 5px black;
+    animation: anim 3s infinite alternate;
+    background-color: cornflowerblue;
+    margin-left: 450px;
+    margin-right: 450px;
+    border-radius: 20px;
+}
+@keyframes anim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
