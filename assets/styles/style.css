@@ -1,17 +1,60 @@
+/*MAIN STYLES <-*/
 body {
-    text-align: center;
-    background-image: url("https://i.pinimg.com/originals/bf/fc/bb/bffcbb3c0a5f66158141ae3e6c89bf11.jpg");
-    background-attachment: fixed;
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    margin: 0;
+
+    display: grid;
+        grid-template-columns: auto auto auto;
 }
+main{
+    background-color: rgba(20,20,20,0.6);
+
+    text-align: center;
+
+    box-shadow: 2px 0 1px black,
+                -2px 0 1px black;
+
+}
+header{
+    font-size: xxx-large;
+
+    color: white;
+
+    border-bottom: solid 2px black;
+    box-shadow: 0 4px 4px black;
+
+    text-shadow: 4px 4px 4px black;
+}
+header span{
+    font-family: Consolas;
+    font-weight: bolder;
+}
+/*MAIN STYLES <-*/
+
+/*FONTS ->*/
 @font-face {
-    font-family:"Virus_01";
-    src: url('/assets/fonts/Virus_01.ttf');
+    font-family:"virus";
+    src: url('../fonts/Virus_01.ttf');
     font-style: normal;
 }
-#title{
-    font-family: Arial;
-    color: white;
+@font-face {
+    font-family:"aero";
+    src: url('../fonts/Aero_Matics_Stencil_Bold.ttf');
+    font-style: normal;
 }
+@font-face {
+    font-family:"marsh";
+    src: url('../fonts/Marsh Stencil Regular.otf');
+    font-style: normal;
+}
+/*FONTS <-*/
+
+/*H1 ->*/
 #bubl{
   
     font-family: 'Creepster', cursive;
@@ -30,7 +73,6 @@ body {
     font-family: Chiller;
     color: gold;
 }
-
 #yefremenko{
     font-family: "Arial Black";
     color: coral;
@@ -39,16 +81,21 @@ body {
     font-family: Chiller;
     color: #ff00ff;
 }
- #zborshchenko{
+#zborshchenko{
      font-family: "Agency FB";
      color: yellow;
  }
- #ivanina{
+#ivanina{
      font-family: Consolas, "Book Antiqua";
      color: indigo;
  }
 #kasyan_demir{
-    font-family: Virus_01;
+    font-family: virus;
+    transition: 10s;
+    animation: glitch_1 1ms infinite;
+}
+#kasyan_demir:hover{
+    animation: glitch_2 10ms infinite;
 }
 #kliuchnyk_alex{
     font-family: "Britannic Bold";
@@ -65,7 +112,7 @@ body {
 #Kovba{
     color: red;
     background-color: black;
-    font-family: "Segoe Print", serif;
+    font-family: aero;
     margin-left: 325px;
     margin-right: 325px;
 }
@@ -77,27 +124,6 @@ body {
   animation: blink 12s infinite;
   -webkit-animation: blink 12s infinite;
 }
-@-webkit-keyframes blink {
-  20%, 24%,55% {
-    color: #111;
-    text-shadow: none;
-  }
-  0%,19%,21%,23%,25%,54%,56%,100% {
-  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #fff6a9;
-  }
-}
-@keyframes blink {
-  20%, 24%, 55% {
-    color: #111;
-    text-shadow: none;
-  }
-  0%,19%,21%,23%,25%,54%,56%,100% {
-  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #fff6a9;
-  }
-}
-
 #myroslava {
     font-family: "Segoe Script";
     color: #00deff;
@@ -108,6 +134,31 @@ body {
     margin-right: 450px;
     border-radius: 20px;
 }
+#Lulu{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ff0000;
+}
+#oliferuk{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+}
+#ostash{
+    font-family: marsh;
+    color: #000000;
+}
+/*H1 <-*/
+
+/*ANIMATIONS ->*/
+@keyframes glitch_1 {
+    to {
+        transform: translateX(10px);
+    }
+}
+@keyframes glitch_2 {
+     to {
+         transform: translateX(5px);
+     }
+ }
 @keyframes anim {
     from {
         opacity: 0;
@@ -116,12 +167,24 @@ body {
         opacity: 1;
     }
 }
-#Lulu{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #ff0000;
+@-webkit-keyframes blink {
+    20%, 24%,55% {
+        color: #111;
+        text-shadow: none;
+    }
+    0%,19%,21%,23%,25%,54%,56%,100% {
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+        color: #fff6a9;
+    }
 }
-
-#oliferuk{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #000000;
+@keyframes blink {
+    20%, 24%, 55% {
+        color: #111;
+        text-shadow: none;
+    }
+    0%,19%,21%,23%,25%,54%,56%,100% {
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+        color: #fff6a9;
+    }
 }
+/*ANIMATIONS <-*/
