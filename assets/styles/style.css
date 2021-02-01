@@ -213,6 +213,12 @@ header span{
     font-family: 'Dancing Script', cursive;
     text-align: center;
 }
+#shuper {
+    font-size: 50px;
+    color: aqua;
+    font-family: 'Verdana';
+    text-align: center;
+}
 /*H1 <-*/
 
 /*ANIMATIONS ->*/
@@ -254,5 +260,6 @@ header span{
         color: #fff6a9;
     }
 }
+
 /*ANIMATIONS <-*/
 
